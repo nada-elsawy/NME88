@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NME — Scheduling, Attendance &amp; Leave for Modern Teams</title>
+  <meta name="description" content="NME is the all-in-one workforce platform for scheduling, time &amp; attendance, and leave management. Built for teams that run on shifts." />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ===== Header ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo">
+        <span class="logo-mark">NME</span>
+        <span class="logo-text">NME</span>
+      </a>
+
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="main-nav">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#pricing">Pricing</a>
+        <a href="#faq">FAQ</a>
+        <button class="theme-btn" data-i18n-skip type="button" aria-label="Theme"></button>
+        <button class="lang-btn" data-i18n-skip type="button"></button>
+        <a href="app.html#login">Log in</a>
+        <a href="app.html#signup" class="btn btn-primary btn-sm">Create account</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="eyebrow">Workforce management, simplified</span>
+          <h1>Run every shift<br>without the spreadsheet chaos.</h1>
+          <p class="lead">
+            NME brings scheduling, time &amp; attendance, and leave management
+            into one clean workspace — so managers plan faster and teams always
+            know where they need to be.
+          </p>
+          <div class="hero-cta">
+            <a href="app.html#signup" class="btn btn-primary btn-lg">Start free trial</a>
+            <a href="#how" class="btn btn-ghost btn-lg">See how it works</a>
+          </div>
+          <div class="hero-trust">
+            <div class="stars">★★★★★</div>
+            <span>Loved by <strong>2,400+</strong> shift-based teams</span>
+          </div>
+        </div>
+
+        <!-- CSS/HTML dashboard mockup -->
+        <div class="hero-visual" aria-hidden="true">
+          <div class="mock-window">
+            <div class="mock-titlebar">
+              <span class="dot dot-r"></span><span class="dot dot-y"></span><span class="dot dot-g"></span>
+              <span class="mock-url">app.nme.com/dashboard</span>
+            </div>
+            <div class="mock-body">
+              <div class="mock-sidebar">
+                <div class="mock-brand"></div>
+                <div class="mock-nav-item active"></div>
+                <div class="mock-nav-item"></div>
+                <div class="mock-nav-item"></div>
+                <div class="mock-nav-item"></div>
+              </div>
+              <div class="mock-main">
+                <div class="mock-stats">
+                  <div class="mock-stat"><span class="ms-num">08:00</span><span class="ms-label">Shift</span></div>
+                  <div class="mock-stat"><span class="ms-num tint-green">On shift</span><span class="ms-label">Status</span></div>
+                  <div class="mock-stat"><span class="ms-num">12</span><span class="ms-label">Present</span></div>
+                  <div class="mock-stat"><span class="ms-num tint-amber">3</span><span class="ms-label">Leave</span></div>
+                </div>
+                <div class="mock-week">
+                  <div class="mock-day"><b>Mon</b><i></i></div>
+                  <div class="mock-day"><b>Tue</b><i></i></div>
+                  <div class="mock-day today"><b>Wed</b><i></i></div>
+                  <div class="mock-day"><b>Thu</b><i></i></div>
+                  <div class="mock-day"><b>Fri</b><i></i></div>
+                </div>
+                <div class="mock-rows">
+                  <div class="mock-row"><span class="av"></span><span class="bar"></span><span class="pill green"></span></div>
+                  <div class="mock-row"><span class="av"></span><span class="bar w80"></span><span class="pill amber"></span></div>
+                  <div class="mock-row"><span class="av"></span><span class="bar w60"></span><span class="pill green"></span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="float-card float-card-1">
+            <span class="fc-ico green">✓</span>
+            <div><b>Clocked in</b><small>Sara · 07:58</small></div>
+          </div>
+          <div class="float-card float-card-2">
+            <span class="fc-ico amber">🌴</span>
+            <div><b>Leave approved</b><small>Jul 28 – 30</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Logos ===== -->
+    <section class="logos">
+      <div class="container">
+        <p class="logos-label">Teams that run on shifts trust NME</p>
+        <div class="logos-row">
+          <span>Northwind</span><span>Riverside</span><span>Acme Retail</span>
+          <span>BlueCabCo</span><span>Meridian</span><span>CareFirst</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Features ===== -->
+    <section id="features" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Everything in one place</span>
+          <h2>One platform for the whole shift lifecycle</h2>
+          <p class="section-sub">From building the rota to approving leave, NME replaces the messy patchwork of spreadsheets, group chats, and paper forms.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature">
+            <div class="feature-ico tint-primary">📅</div>
+            <h3>Smart scheduling</h3>
+            <p>Build and publish weekly rotas in minutes, with break windows and shift times your team can see at a glance.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-ico tint-info">⏱️</div>
+            <h3>Time &amp; attendance</h3>
+            <p>One-tap clock in and out, automatic late and overtime tracking, and a clean history for every employee.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-ico tint-green">🌴</div>
+            <h3>Leave management</h3>
+            <p>Employees request time off, managers approve or decline in a click, and balances stay up to date automatically.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-ico tint-purple">🔁</div>
+            <h3>Shift swaps</h3>
+            <p>Let staff propose swaps and cover shifts themselves — with manager approval and break limits built in.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-ico tint-amber">📣</div>
+            <h3>Announcements</h3>
+            <p>Broadcast policy changes, events, and urgent notices so the whole team is always in the loop.</p>
+          </article>
+          <article class="feature">
+            <div class="feature-ico tint-red">📊</div>
+            <h3>Roles &amp; admin</h3>
+            <p>Granular roles for employees, managers, and admins — plus departments, teams, and full audit logs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== How it works ===== -->
+    <section id="how" class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Up and running fast</span>
+          <h2>How NME works</h2>
+          <p class="section-sub">Three steps from sign-up to a fully scheduled, self-serving team.</p>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Add your team</h3>
+            <p>Import employees, set up departments and teams, and assign managers. Roles decide who sees and does what.</p>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Build the schedule</h3>
+            <p>Drop in shifts and breaks for the week and publish. Everyone gets their rota instantly on any device.</p>
+          </div>
+          <div class="step-line"></div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Let it run</h3>
+            <p>Staff clock in, request leave, and swap shifts. Managers approve on the go and track attendance in real time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Showcase ===== -->
+    <section class="section">
+      <div class="container showcase">
+        <div class="showcase-copy">
+          <span class="eyebrow">Built for clarity</span>
+          <h2>A dashboard your whole team actually enjoys using</h2>
+          <ul class="check-list">
+            <li>Today's shift, clock status, and breaks — front and center.</li>
+            <li>Managers get a live team snapshot: who's in, who's out, what's pending.</li>
+            <li>Role-based views keep everyone focused on what matters to them.</li>
+            <li>Works on desktop, tablet, and phone — no app install required.</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Get a live demo</a>
+        </div>
+        <div class="showcase-visual">
+          <div class="panel">
+            <div class="panel-row head"><span>Employee</span><span>Today</span><span>Status</span></div>
+            <div class="panel-row"><span class="pu"><i></i>Sara Ahmed</span><span>07:58 – …</span><span class="tag green">Present</span></div>
+            <div class="panel-row"><span class="pu"><i></i>Omar Khaled</span><span>09:12 – …</span><span class="tag amber">Late</span></div>
+            <div class="panel-row"><span class="pu"><i></i>Layla Hassan</span><span>—</span><span class="tag blue">On leave</span></div>
+            <div class="panel-row"><span class="pu"><i></i>Nada Elsawy</span><span>08:00 – …</span><span class="tag green">Present</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Stats band ===== -->
+    <section class="stats-band">
+      <div class="container stats-inner">
+        <div class="stat-big"><span class="sb-num">2,400+</span><span class="sb-label">Teams onboarded</span></div>
+        <div class="stat-big"><span class="sb-num">1.8M</span><span class="sb-label">Shifts scheduled</span></div>
+        <div class="stat-big"><span class="sb-num">99.9%</span><span class="sb-label">Uptime</span></div>
+        <div class="stat-big"><span class="sb-num">4.8/5</span><span class="sb-label">Average rating</span></div>
+      </div>
+    </section>
+
+    <!-- ===== Testimonials ===== -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">What teams say</span>
+          <h2>Managers get their evenings back</h2>
+        </div>
+        <div class="testimonials">
+          <figure class="quote">
+            <div class="stars">★★★★★</div>
+            <blockquote>"We cut our weekly scheduling time from three hours to about twenty minutes. The team loves seeing their shifts instantly."</blockquote>
+            <figcaption><span class="q-av">RH</span><div><b>Rana Hassan</b><small>Ops Manager, Riverside</small></div></figcaption>
+          </figure>
+          <figure class="quote">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Leave requests used to live in my inbox. Now approvals take one tap and nothing slips through the cracks."</blockquote>
+            <figcaption><span class="q-av">JM</span><div><b>James Miller</b><small>Store Lead, Acme Retail</small></div></figcaption>
+          </figure>
+          <figure class="quote">
+            <div class="stars">★★★★★</div>
+            <blockquote>"Attendance and overtime finally add up automatically. Payroll day is no longer a nightmare."</blockquote>
+            <figcaption><span class="q-av">PK</span><div><b>Priya Kaur</b><small>HR, Meridian</small></div></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Pricing ===== -->
+    <section id="pricing" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Simple pricing</span>
+          <h2>Plans that scale with your team</h2>
+          <p class="section-sub">Start free. Upgrade when you're ready. No contracts, cancel anytime.</p>
+        </div>
+        <div class="pricing">
+          <div class="price-card">
+            <h3>Starter</h3>
+            <p class="price"><span>$0</span>/mo</p>
+            <p class="price-note">For small teams getting organized.</p>
+            <ul class="check-list">
+              <li>Up to 10 employees</li>
+              <li>Scheduling &amp; attendance</li>
+              <li>Leave requests</li>
+              <li>Email support</li>
+            </ul>
+            <a href="app.html#signup" class="btn btn-ghost btn-block">Get started</a>
+          </div>
+          <div class="price-card featured">
+            <span class="badge-pop">Most popular</span>
+            <h3>Team</h3>
+            <p class="price"><span>$4</span>/user/mo</p>
+            <p class="price-note">For growing shift-based teams.</p>
+            <ul class="check-list">
+              <li>Unlimited employees</li>
+              <li>Shift swaps &amp; approvals</li>
+              <li>Announcements &amp; roles</li>
+              <li>Priority support</li>
+            </ul>
+            <a href="app.html#signup" class="btn btn-primary btn-block">Start free trial</a>
+          </div>
+          <div class="price-card">
+            <h3>Enterprise</h3>
+            <p class="price"><span>Custom</span></p>
+            <p class="price-note">For multi-site organizations.</p>
+            <ul class="check-list">
+              <li>Departments &amp; teams</li>
+              <li>Audit logs &amp; SSO</li>
+              <li>Dedicated manager</li>
+              <li>Custom onboarding</li>
+            </ul>
+            <a href="#contact" class="btn btn-ghost btn-block">Contact sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" class="section section-alt">
+      <div class="container narrow">
+        <div class="section-head">
+          <span class="eyebrow">Good to know</span>
+          <h2>Frequently asked questions</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>Do employees need to install an app?</summary>
+            <p>No. NME runs in any modern browser on desktop, tablet, and phone. Staff just log in and go.</p>
+          </details>
+          <details>
+            <summary>Can I set different permissions for managers and staff?</summary>
+            <p>Yes. Roles for employees, managers, and admins control exactly what each person can see and do, down to departments and teams.</p>
+          </details>
+          <details>
+            <summary>How does clocking in and attendance tracking work?</summary>
+            <p>Employees clock in and out with one tap. NME automatically flags late arrivals and totals overtime, and keeps a full attendance history.</p>
+          </details>
+          <details>
+            <summary>Is there a free plan?</summary>
+            <p>Absolutely. The Starter plan is free for up to 10 employees and includes scheduling, attendance, and leave requests.</p>
+          </details>
+          <details>
+            <summary>Can we import our existing team data?</summary>
+            <p>Yes — bring in employees, departments, and teams during onboarding. Enterprise plans include a dedicated onboarding manager.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA + Contact ===== -->
+    <section id="contact" class="cta-section">
+      <div class="container cta-inner">
+        <div class="cta-copy">
+          <h2>Ready to tame your schedule?</h2>
+          <p>Start a free trial today, or book a 15-minute demo and we'll show you NME with your own team in mind.</p>
+          <ul class="cta-points">
+            <li>✓ Free for up to 10 employees</li>
+            <li>✓ No credit card required</li>
+            <li>✓ Set up in under an hour</li>
+          </ul>
+        </div>
+        <form class="cta-form" onsubmit="return false">
+          <h3>Get started</h3>
+          <label>Work email
+            <input type="email" name="email" placeholder="you@company.com" required />
+          </label>
+          <label>Team size
+            <select name="size">
+              <option>1–10</option><option>11–50</option><option>51–200</option><option>200+</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Start free trial</button>
+          <p class="form-fine">By continuing you agree to our terms. This is a demo site — no data is sent.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#top" class="logo"><span class="logo-mark">NME</span><span class="logo-text">NME</span></a>
+        <p>Scheduling, attendance &amp; leave for modern teams.</p>
+      </div>
+      <div class="footer-cols">
+        <div><h4>Product</h4><a href="#features">Features</a><a href="#pricing">Pricing</a><a href="#how">How it works</a></div>
+        <div><h4>Company</h4><a href="#">About</a><a href="#">Careers</a><a href="#">Blog</a></div>
+        <div><h4>Support</h4><a href="#faq">FAQ</a><a href="#contact">Contact</a><a href="#">Status</a></div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© 2026 NME. Demo site.</span>
+      <div class="footer-legal"><a href="#">Privacy</a><a href="#">Terms</a></div>
+    </div>
+  </footer>
+
+  <script src="js/i18n.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
