@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Workforce Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- Login screen -->
+  <div id="login-screen" class="login-screen">
+    <div class="login-card">
+      <div class="brand">
+        <div class="brand-mark">WP</div>
+        <div>
+          <h1>Workforce Portal</h1>
+          <p class="muted">Scheduling &amp; attendance for the Travel Team</p>
+        </div>
+      </div>
+
+      <form id="login-form" class="login-form" autocomplete="off">
+        <label>
+          Employee ID
+          <input id="login-employee-id" type="text" placeholder="e.g. EMP006" required />
+        </label>
+        <label>
+          Password
+          <input id="login-password" type="password" placeholder="Any password (demo)" />
+        </label>
+        <p id="login-error" class="login-error" hidden></p>
+        <button type="submit" class="btn btn-primary btn-block">Sign in</button>
+      </form>
+
+      <div class="login-divider"><span>or sign in as a demo user</span></div>
+
+      <div id="demo-users" class="demo-users"></div>
+
+      <p class="login-note muted">
+        Demo mode — passwords are not verified. Data is seeded from your
+        <code>workforce_db_export.sql</code> plus a few sample team members.
+      </p>
+    </div>
+  </div>
+
+  <!-- Application shell -->
+  <div id="app" class="app" hidden>
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <div class="brand-mark">WP</div>
+        <span>Workforce Portal</span>
+      </div>
+      <nav id="nav" class="nav"></nav>
+      <div class="sidebar-footer">
+        <button id="reset-data" class="btn btn-ghost btn-sm" title="Restore seeded demo data">Reset demo data</button>
+      </div>
+    </aside>
+
+    <div class="main">
+      <header class="topbar">
+        <button id="menu-toggle" class="icon-btn" aria-label="Toggle menu">☰</button>
+        <h2 id="page-title">Dashboard</h2>
+        <div class="topbar-right">
+          <button id="notif-btn" class="icon-btn" title="Notifications">
+            🔔<span id="notif-badge" class="badge-count" hidden>0</span>
+          </button>
+          <div class="user-chip">
+            <div id="user-avatar" class="avatar">?</div>
+            <div class="user-chip-meta">
+              <span id="user-name">—</span>
+              <span id="user-role" class="role-pill">—</span>
+            </div>
+          </div>
+          <button id="logout" class="btn btn-ghost btn-sm">Sign out</button>
+        </div>
+      </header>
+
+      <main id="view" class="view"></main>
+    </div>
+  </div>
+
+  <!-- Notifications drawer -->
+  <div id="notif-drawer" class="drawer" hidden>
+    <div class="drawer-header">
+      <h3>Notifications</h3>
+      <button id="notif-close" class="icon-btn">✕</button>
+    </div>
+    <div id="notif-list" class="drawer-body"></div>
+  </div>
+  <div id="drawer-overlay" class="drawer-overlay" hidden></div>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" hidden></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
